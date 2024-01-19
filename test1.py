@@ -1,3 +1,25 @@
-import fibo as f
-out = f.fib(100)
-print(*out)
+#!/usr/bin/python3
+
+class dog:
+
+    def __init__(self, name = '', height = 0, weight = 0):
+        self.name = name
+        self.height = height
+        self.weight = weight
+    
+    def run(self):
+        print("{} the dog runs".format(self.name))
+    
+    def eat(self):
+        print("{} the dog eats".format(self.name))
+
+    def bark(self):
+        print("{} the dog barks".format(self.name))
+
+def main():
+    spot = dog("spot")
+    spot.bark()
+    spot.eat()
+    bowser = dog()
+    bowser.bark()
+main()
